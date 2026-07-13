@@ -52,3 +52,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 4000);
   }
 });
+/* =========================
+   MEMORIES WITH NAVI SLIDER
+========================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const memorySlides = Array.from(
+    document.querySelectorAll(".memories-slider .memory-slide")
+  );
+
+  const memoryDots = Array.from(
+    document.querySelectorAll(".memories-slider .memory-dots span")
+  );
+
+  if (memorySlides.length === 0) return;
+
+  let memoryIndex = 0;
+
+  function showMemorySlide(index) {
+    memorySlides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+
+    memoryDots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  }
+
+  showMemorySlide(memoryIndex);
+
+  if (memorySlides.length > 1) {
+    setInterval(() => {
+      memoryIndex = (memoryIndex + 1) % memorySlides.length;
+      showMemorySlide(memoryIndex);
+    }, 5000);
+  }
+});
