@@ -95,6 +95,61 @@
         <article class="archive-card reveal"><span>CITY</span><h3>HORENTO</h3><p>森の近くにある街。魔法文明を持つ人々が暮らす。</p></article>
         <article class="archive-card reveal"><span>ORGANIZATION</span><h3>MOZE</h3><p>Multi-World Orbital Zenith Explorers. “Beyond Every Frontier.”</p></article>
       </div>
+      <div class="equipment-feature reveal">
+
+  <div class="equipment-slider" aria-label="MAGIA装備イラスト">
+
+    <img
+      class="equipment-slide active"
+      src="assets/magia1.webp"
+      alt="MAGIA ナノ粒子可変式ハンドガン"
+      tabindex="0"
+    >
+
+    <img
+      class="equipment-slide"
+      src="assets/magia2.webp"
+      alt="MAGIA メディカルキット"
+      tabindex="0"
+    >
+
+    <img
+      class="equipment-slide"
+      src="assets/magia3.webp"
+      alt="MAGIA 超小型AI翻訳機"
+      tabindex="0"
+    >
+
+    <div class="equipment-dots" aria-hidden="true">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+  <div class="equipment-info">
+    <p class="code">MOZE EXPLORATION EQUIPMENT</p>
+    <h3>MAGIA SYSTEM</h3>
+
+    <p>
+      アレスが惑星探索で使用する高性能装備群。
+      戦闘、救命、言語解析を支援し、未知環境での生存率を高める。
+    </p>
+
+    <dl>
+      <dt>MAGIA 01</dt>
+      <dd>ナノ粒子可変式ハンドガン</dd>
+
+      <dt>MAGIA 02</dt>
+      <dd>メディカルキット</dd>
+
+      <dt>MAGIA 03</dt>
+      <dd>超小型AI翻訳機</dd>
+    </dl>
+  </div>
+
+</div>
       <div class="beast-feature reveal"><img src="assets/beast.webp" alt="ナヴィ 部分獣化"><div><p class="code">TRANSFORMATION DATA</p><h3>PARTIAL BEAST FORM</h3><p>戦闘時、両腕と両脚が獣化。白い鱗と爪、強化された脚力で囮獣へ立ち向かう。</p></div></div>
     </section>
 
@@ -129,6 +184,21 @@
 </section>
     </section>
   </main>
+  <div class="image-modal" id="imageModal" aria-hidden="true">
+
+  <button
+    class="image-modal-close"
+    type="button"
+    aria-label="拡大画像を閉じる"
+  >
+    ×
+  </button>
+
+  <img id="imageModalContent" src="" alt="">
+
+  <p id="imageModalCaption"></p>
+
+</div>
   <footer>© 2026 MAGIA//SPELL PROJECT — PRODUCED BY TO</footer>
   <script src="script.js"></script>
 </body>
